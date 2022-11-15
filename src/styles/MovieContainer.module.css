@@ -6,3 +6,12 @@
   place-items: center;
 }
 
+.more {
+  text-align: center;
+}
+
+.more button {
+  color: white;
+  background-color: transparent;
+  border: transparent;
+}

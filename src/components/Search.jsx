@@ -6,19 +6,22 @@ export default function ({ fetchMovies }) {
   const inputRef = useRef();
 
   return (
-    <div className={styles.search}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        fetchMovies(inputRef.current.value);
+      }}
+      className={styles.search}
+    >
       <input
         type="text"
         placeholder="Search for movies"
         ref={inputRef}
         className={styles["search-input"]}
       />
-      <button
-        className={styles["search-btn"]}
-        onClick={() => fetchMovies(inputRef.current.value)}
-      >
+      <button type="submit" className={styles["search-btn"]}>
         <SearchIcon />
       </button>
-    </div>
+    </form>
   );
 }

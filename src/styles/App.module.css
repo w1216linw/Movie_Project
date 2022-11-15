@@ -6,8 +6,10 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  letter-spacing: 1rem;
+  letter-spacing: 1em;
+  text-indent:1em;
   cursor: default;
+  user-select: none;
 }
 
 .title h1 {
@@ -24,3 +26,4 @@
   color: white;
   clip-path: inset(-1% -1% 50% -1%);
 }
+
