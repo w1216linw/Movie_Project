@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.title {
+  font-family: Anton;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1rem;
+}
+
+.title h1 {
+  font-size: 5rem;
+  background-color: white;
+  color: rgb(41, 40, 40);
+  display: block;
+  padding: .1em .5em;
+}
+
+.title h1:nth-child(2) {
+  position: absolute;
+  background-color: rgb(41, 40, 40);
+  color: white;
+  clip-path: inset(-1% -1% 50% -1%);
+}

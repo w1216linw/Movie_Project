@@ -1,0 +1,22 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4em 0;
+}
+
+.search-input {
+  height: 2em;
+  width: clamp(6em, 20vw + 8em, 30em);
+  font-size: 1.5em;
+  padding: 0 5px;
+}
+
+.search-btn {
+  width: 2em;
+  font-size: 1.5em;
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}

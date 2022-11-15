@@ -1,0 +1,72 @@
+.container {
+  width: 20rem;
+  height: 30rem;
+  position: relative;
+}
+
+.center img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.center {
+  position: relative;
+}
+
+.center::before,
+.center::after {
+  content: '';
+  position: absolute;
+  inset: 1rem;
+  transition: scale 200ms ease-in;
+}
+
+.center::before {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  scale: 1 0;
+}
+
+.center::after {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  scale: 0 1;
+}
+
+.cover {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: max-content;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.cover p {
+  font-size: 1.5em;
+}
+
+.cover span {
+  font-size: 1.25em;
+}
+
+.container:hover .center::after {
+  scale: 0.95 1;
+}
+
+.container:hover .center::before {
+  scale: 1 0.95;
+}
+
+.container:hover img {
+  opacity: 0.3;
+}
+
+.container:hover .cover {
+  opacity: 1;
+}
